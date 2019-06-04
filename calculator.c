@@ -40,10 +40,9 @@ int main(int argc, char* argv[]) {
   else {
     printf("please input the correct amount of parameters\n");
   }
-  if (argv[3] == "sphere" && argv[4] == "volume") {
-    float ans = Vforsphere(radius);
-    printf("the volume of the sphere is %f", ans);
-  }
+ 
   printf("radius is %f, height is %f, shape is %s, finding %s\n", radius, height, argv[3], argv[4]);
-  
+  if (strcmp(argv[3], cylinder" && argv[4] == "volume")) {
+     printf("The volume of the cylinder is %f \n", Vforcylinder(radius, height));
+  } 
 }
