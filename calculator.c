@@ -40,7 +40,8 @@ int main(int argc, char* argv[]) {
   else {
     printf("please input the correct amount of parameters\n");
   }
-  if (argv[3] == "sphere" && argv[4] == "volume") {
+
+  if ((strcmp(argv[3], "sphere") == 0) && (strcmp(argv[4], "volume") == 0)) {
     float ans = Vforsphere(radius);
     printf("the volume of the sphere is %f", ans);
   }
