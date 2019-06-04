@@ -33,13 +33,13 @@ int main(int argc, char* argv[]) {
   }
   float radius, height;
   char answer[256];
-  if (argc == 4) {
+  if (argc == 5) {
     sscanf(argv[1], "%f", &radius);
     sscanf(argv[2], "%f", &height);
   }
   else {
     printf("please input the correct amount of parameters");
   }
-  printf("radius is %f, height is %f, shape is %s", radius, height, argv[3]);
+  printf("radius is %f, height is %f, shape is %s, finding %s", radius, height, argv[3], argv[4]);
   
 }
