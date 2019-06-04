@@ -7,7 +7,7 @@ float SAforsphere(float radius)
   float ans = radius * radius * 4 / 3 * M_PI;
   return ans;
   }
-float SAforcylinder(float radius, float height, float ans, float area, float area2)
+float SAforcylinder(float radius, float height, float area, float area2)
   {
   area = radius * radius * M_PI;
   area2 = height * 2 * M_PI * radius;
@@ -37,5 +37,9 @@ int main(int argc, char* argv[]) {
     sscanf(argv[1], "%f", &radius);
     sscanf(argv[2], "%f", &height);
   }
+  else {
+    printf("please input the correct amount of parameters");
+  }
   printf("radius is %f, height is %f, shape is %s", radius, height, argv[3]);
+  
 }
