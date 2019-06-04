@@ -22,5 +22,8 @@ float Vforcylinder(float radius, float height, float ans)
 
 int main()
   {
-  
+  float radius;
+  float height;
+  )
+    
   }
