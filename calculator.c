@@ -39,20 +39,20 @@ int main(int argc, char* argv[]) {
     printf("please input the correct amount of parameters\n");
   }
 
-  if ((strcmp(argv[3], "sphere" | "Sphere") == 0) && (strcmp(argv[4], "volume" | "Volume" | "V") == 0)) {
+  if ((strcmp(argv[3], "sphere" || "Sphere") == 0) && (strcmp(argv[4], "volume" || "Volume" || "V") == 0)) {
     float ans = Vforsphere(radius);
     printf("the volume of the sphere is %f \n", ans);
   }
   printf("radius is %f, height is %f, shape is %s, finding %s\n", radius, height, argv[3], argv[4]);
-  if ((strcmp(argv[3], "sphere" | "Sphere") == 0) && (strcmp(argv[4], "surface area" | "SA" | "Surface Area") == 0)) {
+  if ((strcmp(argv[3], "sphere" || "Sphere") == 0) && (strcmp(argv[4], "surface area" || "SA" || "Surface Area") == 0)) {
     float ans = SAforsphere(radius);
     printf("the surface area of the sphere is %f \n", ans);
   }  
-  if ((strcmp(argv[3], "cylinder" | "Cylinder") == 0) && (strcmp(argv[4], "surface area" | "SA" | "Surface Area") == 0)) {
+  if ((strcmp(argv[3], "cylinder" || "Cylinder") == 0) && (strcmp(argv[4], "surface area" || "SA" || "Surface Area") == 0)) {
     float ans = SAforcylinder(radius, height);
     printf("the surface area of the cylinder is %f \n", ans);
   } 
-  if ((strcmp(argv[3], "cylinder" | "Cylinder") == 0) && (strcmp(argv[4], "volume" | "Volume" | "V") == 0)) {
+  if ((strcmp(argv[3], "cylinder" || "Cylinder") == 0) && (strcmp(argv[4], "volume" || "Volume" || "V") == 0)) {
     float ans = Vforcylinder(radius, height);
     printf("the volume of the cylinder is %f \n", ans);
 }
