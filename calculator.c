@@ -4,12 +4,12 @@
 
 float SAforsphere(float radius)
   {
-  float ans = radius * radius * 4 / 3 * M_PI;
+  float ans = radius * radius * 4 * M_PI;
   return ans;
   }
 float SAforcylinder(float radius, float height)
   {
-  float area = radius * radius * M_PI;
+  float area = radius * radius * M_PI * 2;
   float area2 = height * 2 * M_PI * radius;
   float ans = area + area2;
   return ans;
