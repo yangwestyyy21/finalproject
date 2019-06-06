@@ -24,7 +24,11 @@ float Vforcylinder(float radius, float height)
   float ans = height * M_PI * radius * radius;
   return ans;
   }
-
+float Vforcone(float radius, float height)
+  {
+  float ans = M_PI * radius * radius * height / 3;
+  return ans;
+  }
 int main(int argc, char* argv[]) {
   int arg = 0;
   while (arg < argc) {
@@ -58,5 +62,9 @@ int main(int argc, char* argv[]) {
   if ((strcmp(argv[3], "cylinder") == 0) && ((strcmp(argv[4], "volume") == 0) || (strcmp(argv[4], "V") == 0))) {
     float ans = Vforcylinder(radius, height);
     printf("the volume of the cylinder is %f \n", ans);
+  }
+  if ((strcmp(argv[3], "cone") == 0) && ((strcmp(argv[4], "volume") == 0) || (strcmp(argv[4], "V") == 0))) {
+    float ans = Vforcone(radius, height);
+    printf("the volume of the cone is %f \n", ans);
   }
 }
