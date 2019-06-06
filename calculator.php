@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="question1.css">
   </head>
 
 
