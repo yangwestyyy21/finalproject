@@ -24,6 +24,11 @@ float Vforcylinder(float radius, float height)
   float ans = height * M_PI * radius * radius;
   return ans;
   }
+float SAforcone(float radius, float height)
+  {
+  float a = radius + sqrtf(height*height + radius*radius);
+  float ans = M_PI * radius * a;
+  }
 float Vforcone(float radius, float height)
   {
   float ans = M_PI * radius * radius * height / 3;
@@ -66,5 +71,12 @@ int main(int argc, char* argv[]) {
   if ((strcmp(argv[3], "cone") == 0) && ((strcmp(argv[4], "volume") == 0) || (strcmp(argv[4], "V") == 0))) {
     float ans = Vforcone(radius, height);
     printf("the volume of the cone is %f \n", ans);
+  }
+  if ((strcmp(argv[3], "cone") == 0) && ((strcmp(argv[4], "surfacearea") == 0) || (strcmp(argv[4], "SA") == 0))) {
+    float ans = SAforcone(radius, height);
+    printf("the surface area of the cone is %f \n", ans);
+  }
+  else {
+    printf("not a valid form of input, please check the accepted forms of input");
   }
 }
