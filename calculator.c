@@ -35,7 +35,7 @@ float Vforcone(float radius, float height)
   return ans;
   }
 int main(int argc, char* argv[]) {
-  int arg = 0;
+  int arg = 1;
   while (arg < argc) {
     printf("Bound %d is %s\n", arg, argv[arg]);
     arg++;
@@ -52,6 +52,8 @@ int main(int argc, char* argv[]) {
 
   printf("radius is %f, height is %f, shape is %s, finding %s\n", radius, height, argv[3], argv[4]);
 
+    for (int i = 1; i < 2; i++)
+  {
   if ((strcmp(argv[3], "sphere") == 0) && ((strcmp(argv[4], "volume") == 0) || (strcmp(argv[4], "V") == 0))) {
     float ans = Vforsphere(radius);
     printf("the volume of the sphere is %f \n", ans);
@@ -76,7 +78,5 @@ int main(int argc, char* argv[]) {
     float ans = SAforcone(radius, height);
     printf("the surface area of the cone is %f \n", ans);
   }
-  else {
-    printf("not a valid form of input, please check the accepted forms of input");
   }
 }
