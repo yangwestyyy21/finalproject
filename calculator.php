@@ -43,13 +43,7 @@
     <?php
        // only display if return code is numeric - i.e. exec has been called
        if (is_numeric($retc)) {
-         echo "<h2>Your Input:</h2>";
-         echo $arg1;
-         echo "<br>";
-         echo $arg2;
-         echo "<br>";
-       
-         echo "<h2>Program Output (an array):</h2>";
+         echo "<h2>Program Output (volume):</h2>";
          foreach ($output as $line) {
            echo $line;
            echo "<br>";
