@@ -8,7 +8,7 @@
 
   <body>
 
-    <h1>Calculator</h1>
+    <h1>Sphere, Cylinder and Cone Calculator</h1>
     <p>Type in the fields and hit go.</p>
 
     <?php
@@ -55,8 +55,6 @@
            echo "<br>";
          }
        
-         echo "<h2>Program Return Code:</h2>";
-         echo $retc;
        }
     ?>
     
