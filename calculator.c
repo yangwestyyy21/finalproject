@@ -41,7 +41,6 @@ int main(int argc, char* argv[]) {
     arg++;
   }
   float radius, height;
-  char answer[256];
   if (argc == 5) {
     sscanf(argv[1], "%f", &radius);
     sscanf(argv[2], "%f", &height);
